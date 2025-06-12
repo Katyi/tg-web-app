@@ -6,12 +6,7 @@ function App() {
     tg.ready();
   }, []);
 
-  return (
-    <div className="App">
-      Working with Telegram Web App
-      <button onClick={onClose}>Закрыть</button>
-    </div>
-  );
+  return <div className="App">Working with Telegram Web App</div>;
 }
 
 export default App;
