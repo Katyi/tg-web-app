@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 
 function App() {
-  const { tg } = useTelegram();
+  const { onToggleButton, tg } = useTelegram();
 
   useEffect(() => {
     tg.ready();
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Telegram Web App</h1>
+      <button onClick={onToggleButton}>toggle</button>
     </div>
   );
 }
