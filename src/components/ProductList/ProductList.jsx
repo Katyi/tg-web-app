@@ -65,11 +65,13 @@ const ProductList = () => {
   const [addedItems, setAddedItems] = useState([]);
   const { tg, queryId } = useTelegram();
 
+  console.log(queryId);
+
   const onSendData = useCallback(() => {
     const data = {
       products: addedItems,
       totalPrice: getTotalPrice(addedItems),
-      queryId,
+      queryId: queryId,
     };
     fetch('http://91.219.190.138:8000/web-data', {
       method: 'POST',
