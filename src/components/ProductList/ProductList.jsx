@@ -71,7 +71,7 @@ const ProductList = () => {
       totalPrice: getTotalPrice(addedItems),
       queryId,
     };
-    fetch('https://tg-web-app-node-nine.vercel.app:8000/web-data', {
+    fetch('http://91.219.190.138:8000/web-data', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
