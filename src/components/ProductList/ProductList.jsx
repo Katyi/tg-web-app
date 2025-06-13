@@ -71,7 +71,7 @@ const ProductList = () => {
       totalPrice: getTotalPrice(addedItems),
       queryId,
     };
-    fetch('http://localhost:8000', {
+    fetch('https://tg-web-app-node-pe3n5bu3s-katyis-projects.vercel.app', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
